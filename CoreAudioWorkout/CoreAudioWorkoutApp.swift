@@ -8,13 +8,11 @@
 import SwiftUI
 
 @main
-struct CoreAudioWorkoutApp: App {
-    @StateObject private var audioSessionManager = AudioSessionManager()
-
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(audioSessionManager)
         }
     }
 }
+
