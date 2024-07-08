@@ -11,6 +11,9 @@
 		C36F02AF2C3C3DE00041C96A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F02AE2C3C3DE00041C96A /* ContentView.swift */; };
 		C36F02B12C3C3DE30041C96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36F02B02C3C3DE30041C96A /* Assets.xcassets */; };
 		C36F02B42C3C3DE30041C96A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36F02B32C3C3DE30041C96A /* Preview Assets.xcassets */; };
+		C36F02BB2C3C3E390041C96A /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F02BA2C3C3E390041C96A /* AudioSessionManager.swift */; };
+		C36F02BF2C3C5DC40041C96A /* AudioFileServiceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F02BE2C3C5DC40041C96A /* AudioFileServiceExample.swift */; };
+		C36F02C92C3C71FF0041C96A /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = C36F02C82C3C71FF0041C96A /* AudioFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		C36F02AE2C3C3DE00041C96A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C36F02B02C3C3DE30041C96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C36F02B32C3C3DE30041C96A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C36F02BA2C3C3E390041C96A /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		C36F02BE2C3C5DC40041C96A /* AudioFileServiceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileServiceExample.swift; sourceTree = "<group>"; };
+		C36F02C82C3C71FF0041C96A /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,12 @@
 		C36F02AB2C3C3DE00041C96A /* CoreAudioWorkout */ = {
 			isa = PBXGroup;
 			children = (
-				C36F02AC2C3C3DE00041C96A /* CoreAudioWorkoutApp.swift */,
-				C36F02AE2C3C3DE00041C96A /* ContentView.swift */,
+				C36F02C82C3C71FF0041C96A /* AudioFiles */,
 				C36F02B02C3C3DE30041C96A /* Assets.xcassets */,
+				C36F02C02C3C5DC80041C96A /* Examples */,
+				C36F02BC2C3C3E400041C96A /* Managers */,
 				C36F02B22C3C3DE30041C96A /* Preview Content */,
+				C36F02BD2C3C3E4C0041C96A /* Views */,
 			);
 			path = CoreAudioWorkout;
 			sourceTree = "<group>";
@@ -65,6 +73,31 @@
 				C36F02B32C3C3DE30041C96A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C36F02BC2C3C3E400041C96A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C36F02BA2C3C3E390041C96A /* AudioSessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C36F02BD2C3C3E4C0041C96A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C36F02AE2C3C3DE00041C96A /* ContentView.swift */,
+				C36F02AC2C3C3DE00041C96A /* CoreAudioWorkoutApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C36F02C02C3C5DC80041C96A /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				C36F02BE2C3C5DC40041C96A /* AudioFileServiceExample.swift */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36F02C92C3C71FF0041C96A /* AudioFiles in Resources */,
 				C36F02B42C3C3DE30041C96A /* Preview Assets.xcassets in Resources */,
 				C36F02B12C3C3DE30041C96A /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36F02AF2C3C3DE00041C96A /* ContentView.swift in Sources */,
+				C36F02BB2C3C3E390041C96A /* AudioSessionManager.swift in Sources */,
 				C36F02AD2C3C3DE00041C96A /* CoreAudioWorkoutApp.swift in Sources */,
+				C36F02BF2C3C5DC40041C96A /* AudioFileServiceExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
