@@ -16,8 +16,9 @@ class AudioSessionManager {
         do {
             let audioSession = AVAudioSession.sharedInstance()
             try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker])
+            try audioSession.setPreferredSampleRate(44100.0)  
             try audioSession.setActive(true)
-            print("Audio session set up successfully")
+            print("Audio session set up successfully with sample rate: \(audioSession.sampleRate)")
         } catch {
             print("Audio Session error: \(error.localizedDescription)")
         }
