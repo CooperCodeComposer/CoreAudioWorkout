@@ -28,9 +28,20 @@ struct ContentView: View {
                         .cornerRadius(8)
                 }
                 .padding()
+                
+                NavigationLink(destination: AudioQueueView()) {
+                    Text("Audio Queue Recording")
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .padding()
+                                    
             }
             .onAppear {
                 AudioSessionManager.shared.setupAudioSession()
+                AudioSessionManager.shared.observeInterruptions()
             }
             .navigationTitle("Core Audio Workout 💪🏻")
         }

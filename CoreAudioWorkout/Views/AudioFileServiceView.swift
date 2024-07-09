@@ -19,7 +19,7 @@ struct AudioFileServiceView: View {
     var body: some View {
         VStack {
             Button("Read Audio File") {
-                if let filePath = Bundle.main.url(forResource: "closed-hi-hat-1", withExtension: "wav", subdirectory: "AudioFiles") {
+                if let filePath = Bundle.main.url(forResource: Consts.hiHatFileName, withExtension: "wav", subdirectory: "AudioFiles") {
                     audioFileServiceExample.filePath = filePath
                     audioFileServiceExample.setupAudioFile()
                     audioData = audioFileServiceExample.readAudioData()

@@ -15,8 +15,11 @@
 		C36F02BB2C3C3E390041C96A /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F02BA2C3C3E390041C96A /* AudioSessionManager.swift */; };
 		C36F02BF2C3C5DC40041C96A /* AudioFileServiceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F02BE2C3C5DC40041C96A /* AudioFileServiceExample.swift */; };
 		C36F02C92C3C71FF0041C96A /* AudioFiles in Resources */ = {isa = PBXBuildFile; fileRef = C36F02C82C3C71FF0041C96A /* AudioFiles */; };
+		C37D43752C3CAF9100258520 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D43742C3CAF9100258520 /* Consts.swift */; };
 		C3F9AEB52C3CA57800A1E9C1 /* AudioGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9AEB42C3CA57800A1E9C1 /* AudioGraphView.swift */; };
 		C3F9AEB72C3CA59C00A1E9C1 /* AudioFileServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9AEB62C3CA59C00A1E9C1 /* AudioFileServiceView.swift */; };
+		C3F9AEB92C3CACEC00A1E9C1 /* AudioQueueRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9AEB82C3CACEC00A1E9C1 /* AudioQueueRecorder.swift */; };
+		C3F9AEBB2C3CAD7000A1E9C1 /* AudioQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9AEBA2C3CAD7000A1E9C1 /* AudioQueueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +32,11 @@
 		C36F02BA2C3C3E390041C96A /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
 		C36F02BE2C3C5DC40041C96A /* AudioFileServiceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileServiceExample.swift; sourceTree = "<group>"; };
 		C36F02C82C3C71FF0041C96A /* AudioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AudioFiles; sourceTree = "<group>"; };
+		C37D43742C3CAF9100258520 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		C3F9AEB42C3CA57800A1E9C1 /* AudioGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioGraphView.swift; sourceTree = "<group>"; };
 		C3F9AEB62C3CA59C00A1E9C1 /* AudioFileServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileServiceView.swift; sourceTree = "<group>"; };
+		C3F9AEB82C3CACEC00A1E9C1 /* AudioQueueRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioQueueRecorder.swift; sourceTree = "<group>"; };
+		C3F9AEBA2C3CAD7000A1E9C1 /* AudioQueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioQueueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				C36F02BC2C3C3E400041C96A /* Managers */,
 				C36F02B22C3C3DE30041C96A /* Preview Content */,
 				C36F02BD2C3C3E4C0041C96A /* Views */,
+				C37D43742C3CAF9100258520 /* Consts.swift */,
 			);
 			path = CoreAudioWorkout;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 			children = (
 				C3F9AEB62C3CA59C00A1E9C1 /* AudioFileServiceView.swift */,
 				C3F9AEB42C3CA57800A1E9C1 /* AudioGraphView.swift */,
+				C3F9AEBA2C3CAD7000A1E9C1 /* AudioQueueView.swift */,
 				C36F02AE2C3C3DE00041C96A /* ContentView.swift */,
 			);
 			path = Views;
@@ -105,6 +113,7 @@
 			children = (
 				C36F02BE2C3C5DC40041C96A /* AudioFileServiceExample.swift */,
 				C35500C72C3C9C5600222640 /* AudioGraphExample.swift */,
+				C3F9AEB82C3CACEC00A1E9C1 /* AudioQueueRecorder.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -181,10 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F9AEB72C3CA59C00A1E9C1 /* AudioFileServiceView.swift in Sources */,
+				C37D43752C3CAF9100258520 /* Consts.swift in Sources */,
+				C3F9AEBB2C3CAD7000A1E9C1 /* AudioQueueView.swift in Sources */,
 				C36F02AF2C3C3DE00041C96A /* ContentView.swift in Sources */,
 				C36F02BB2C3C3E390041C96A /* AudioSessionManager.swift in Sources */,
 				C36F02AD2C3C3DE00041C96A /* CoreAudioWorkoutApp.swift in Sources */,
 				C35500C82C3C9C5600222640 /* AudioGraphExample.swift in Sources */,
+				C3F9AEB92C3CACEC00A1E9C1 /* AudioQueueRecorder.swift in Sources */,
 				C3F9AEB52C3CA57800A1E9C1 /* AudioGraphView.swift in Sources */,
 				C36F02BF2C3C5DC40041C96A /* AudioFileServiceExample.swift in Sources */,
 			);
@@ -317,12 +329,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreAudioWorkout/Preview Content\"";
 				DEVELOPMENT_TEAM = 829TEWXQ4Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -333,8 +347,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AlistairCooper.CoreAudioWorkout;
+				PRODUCT_BUNDLE_IDENTIFIER = AlistairCooper.iOSCoreAudioWorkout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,12 +361,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreAudioWorkout/Preview Content\"";
 				DEVELOPMENT_TEAM = 829TEWXQ4Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -362,8 +379,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AlistairCooper.CoreAudioWorkout;
+				PRODUCT_BUNDLE_IDENTIFIER = AlistairCooper.iOSCoreAudioWorkout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
